@@ -1,0 +1,368 @@
+@import url("../modified_css_reset.css");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: black;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  z-index: 1;
+}
+
+header:first-of-type {
+  color: rgba(255, 255, 255, 0.842);
+  background-color: #464f77;
+  min-width: 336px;
+  height: auto;
+  padding-bottom: 4rem;
+  flex-basis: 336px;
+}
+
+#hidden {
+  display: block;
+  height: 30px;
+}
+
+header:first-of-type h1 {
+  padding: 72px 30px 10px 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 18px;
+}
+
+header:first-of-type ul {
+  color: rgba(255, 255, 255, 0.726);
+  display: block;
+  text-align: center;
+}
+
+header:first-of-type ul li {
+  width: 100%;
+  padding: .90rem 0;
+  font-size: 1rem;
+}
+
+.header_totals {
+  font-size: .9rem;
+  display: inline;
+  float: right;
+  position: relative;
+  right: -3.5rem;
+  background-color: #ffffff52;
+  border-radius: 10px;
+  padding: 1px 5px;
+}
+
+.totals {
+  font-size: .9rem;
+  display: inline;
+  float: right;
+  position: relative;
+  right: 2.02rem;
+  background-color: #ffffff52;
+  border-radius: 10px;
+  padding: 1px 5px;
+}
+
+li.active {
+  background-color: #393f5a;
+}
+
+li.active p {
+  background-color: #148fd5; 
+}
+
+a  {
+  text-decoration: none;
+}
+
+header:first-of-type ul li a {
+  color: white;
+}
+
+header:first-of-type h1:first-child:before {
+  content: url("images2/all-todos.png");
+  padding-left: 4px;
+  padding-right: 1rem;
+}
+
+header:first-of-type h1:last-of-type:before {
+  content: url("images2/done.png");
+  padding-left: 4px;
+  padding-right: 1rem;
+}
+
+.todos {
+  display: none;
+}
+
+header:first-of-type ul#todos li:hover {
+  background-color: #393f5a;
+ }
+
+#completed li {
+  text-decoration: line-through;
+}
+
+main {
+  max-width: 745px;
+  flex-basis: 100%;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+main h2 {
+  padding: 20px;
+  position: relative;
+  left: -22px;
+}
+
+section {
+  display: none;
+}
+
+/* main label input:first-child {
+  display: none;
+} */
+
+#burger {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+main h2 p:first-of-type {
+  display: inline;
+  position: relative;
+  left: 20px;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  font-weight: 200;
+}
+
+main h2 p:last-of-type {
+  display: inline;
+  font-weight: 100;
+  position: relative;
+  left: 36px;
+  background-color: #148fd5;
+  border-radius: 10px;
+  padding: 1px 5px; 
+  color: white
+}
+
+main ul {
+  display: block;
+  width: 100%;
+}
+
+main ul li a {
+  color: #2496d8;
+  padding: 4px;
+  font-size: .9rem;
+}
+
+main ul li {
+  display: flex;
+  width: 100%;
+  border-top: .012rem solid rgba(202, 202, 202, 0.39);
+  border-bottom: .012rem solid rgba(202, 202, 202, 0.295);
+  padding: 1rem;
+  align-items: center;
+}
+
+main ul li:last-of-type {
+  border-bottom: none;
+}
+
+main ul li:first-of-type {
+  border-top: none;
+}
+
+main ul li:first-of-type:before {
+  content: url("images2/plus.png");
+  padding-left: 2px;
+  padding-right: 10px; 
+}
+
+main ul li:not(:first-of-type) label:nth-of-type(2) {
+  position: relative;
+  left: -72px;
+}
+
+main ul li input:nth-child(1):checked + label:after {
+  content: url("images2/ticked-box.png");
+  position: relative;
+  left: -18px;
+}
+
+main ul li input:nth-child(1):checked ~ label {
+  text-decoration: line-through;
+  color: rgba(128, 128, 128, 0.336);
+}
+
+.items {
+  display: none;
+}
+
+main label {
+  text-align: left;
+  position: relative;
+  flex-basis: 125px;
+}
+
+main ul li .items + label:hover,
+main ul li .modal ~ label:hover {
+  color: #40abe9;
+  cursor: pointer;
+}
+
+.trash {
+  position: relative;
+  flex-basis: 80%;
+  color: black;
+  text-align: right;
+}
+
+.modal {
+  display: none;
+}
+
+.modal:checked ~ section {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  top: 18%;
+  left: 35%;
+  width: 600px;
+  height: 340px;
+  padding: 25px 20px 25px 20px;
+}
+
+.modal:checked ~ section {
+  display: block;
+}
+
+.modal:checked ~ section form{
+  /* margin: 10px; */
+  position: absolute;
+  right:0;
+  top: 0;
+  left: 20px;
+  bottom: 0;
+}
+
+.modal:checked ~ section form dl dd,
+.modal:checked ~ section form dl dt {
+  display: inline;
+}
+
+.modal:checked ~ section form dt label {
+  /* margin-right: 20px; */
+  /* align-items: top-left; */
+}
+
+
+.modal:checked ~ figure:before {
+  position: fixed;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  background: rgba(0, 0, 0, .4);
+}
+
+.title[type="textbox"] {
+  width: 75%;
+  height: 30px;
+  position: relative;
+  left: 68px;
+}
+
+.due {
+  position: relative;
+  left: 30px;
+  width: 143px;
+  height: 30px;
+}
+
+[type="submit"] {
+  background-color: #40abe9;
+  width: 200px;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  position: relative;
+  bottom: 24px;
+  left: 100px;
+  padding: 8px 4px;  
+  margin-right: 50px;
+  font-size: 1rem;;
+}
+
+dl {
+  margin: 40px 0;
+}
+
+textarea {
+  position: relative;
+  left: 1rem;
+  resize: none;
+}
+
+.desc {
+  position: relative;
+  bottom: 110px;
+}
+
+/* Mobile media query*/
+@media (max-width: 768px) {
+  main {
+    padding-top: 25px;
+  }
+
+  header:first-of-type {
+    display: none;
+  }
+
+  .hidden {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    margin-top: 26px;;
+  }
+
+  #hamburger {
+    display: inline-block;
+    width: 35px;
+    height: auto;
+  } 
+  
+  #hamburger > img {
+    display: block;
+    width: 100%;
+  }
+
+  #hamburger:hover {
+    cursor: pointer;
+  }
+
+  main h2 {
+    position: relative;
+    /* padding-left: 0; */
+  }
+
+  main {
+    position: relative;
+    left: -48px;
+    top: 60px;
+  }
+}

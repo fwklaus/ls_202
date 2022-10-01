@@ -1,0 +1,140 @@
+body{
+  font-family: "Helvetica Black", "Helvetica";
+  font-size: 0;
+  width: 248px;
+}
+
+h1 {
+  font-size: 2.10rem;
+  font-family: "Franklin Gothic Heavy";
+  margin: 0;
+}
+
+section p{
+  font-size: .75rem;
+  padding: 0;
+  margin: 0;
+}
+
+section p.border:first-of-type {
+  font-size: .50rem;;
+}
+
+section p.border:last-of-type {
+  font-size: .25rem;
+}
+
+p.border {
+  font-size: .75rem;
+  margin:0;
+}
+
+p.disclaimer {
+  margin-top: 5px;;
+  font-size: .60rem;
+}
+
+h2 {
+  font-family: "Franklin Gothic Heavy";
+  font-size: .75rem;
+  margin: 5px 0 0 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  font-size: .80rem;;
+  display: inline-block;
+  list-style-type: none;
+  width: 50%;
+}
+
+li strong{
+  font-family: "Franklin Gothic Heavy";
+}
+
+table {
+  box-sizing: border-box;
+  width: 240px;
+  border-collapse: collapse;
+  margin-top: 3px;;
+}
+
+table:last-of-type tr.last {
+  border-bottom: none;
+}
+
+tr {
+  border-bottom: solid thin grey;
+}
+
+tr td.long {
+  width: 66%;
+}
+
+th {
+  width: 50%;
+  text-align: right;
+}
+
+td {
+  font-size: .70rem;
+}
+
+[scope="col"] {
+  font-size: .70rem;
+  font-family: "Franklin Gothic Heavy";
+}
+
+tr.last th {
+  width: 15%;
+}
+
+tr.last td {
+  width: 15%;
+}
+
+tr.last th[scope="col"] {
+  font-size: .50rem;
+  font-family: "Helvetica Black", "Helvetica";
+  text-align: left;
+}
+
+tr.last td {
+  font-size: .55rem;
+  text-align: left;
+}
+
+th[scope="row"] {
+  font-size: .70rem;
+  text-align: left;
+}
+
+tr.last th[scope="row"] {
+  font-size: .50rem;
+  font-family: "Helvetica Black", "Helvetica";
+  text-align: left;
+}
+
+tr.last th.carb[scope="row"] {
+  width: 25%;
+}
+
+tr.last th.fiber[scope="row"] {
+  text-align: center;
+}
+
+[scope="row"] strong {
+  font-family: "Franklin Gothic Heavy";
+  font-size: .70rem;
+}
+
+td strong {
+  font-family: "Franklin Gothic Heavy";
+}
+
+tr td.percent {
+  text-align: right;
+}

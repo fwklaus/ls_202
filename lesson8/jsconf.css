@@ -1,0 +1,418 @@
+@import url("../modified_css_reset.css");
+
+body {
+  box-sizing: border-box;
+  color: black;
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  z-index: 1;
+  font-weight: normal;
+}
+
+header, main {
+  max-width: 1000px;
+  min-width: 500px;
+  margin: 0 auto;
+}
+
+header nav {
+border-bottom: .005rem solid rgb(235, 235, 235);
+border-top: .80rem solid rgb(248, 248, 248);
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: white;
+display: block;
+z-index: 2;
+}
+
+header nav ul {
+  display: block;
+  max-width: 1000px;
+  min-width: 500px;;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  width: 16%;
+  margin: 0;
+  text-align: center;
+  padding: .75rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(61, 61, 61);
+  width: 100%;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#banner {
+  display: block;
+  background: green url("images/img_front.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(253, 253, 253);
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 60px;
+  bottom: 270px;
+}
+
+section#banner h1, section#banner h2, section#banner figure {
+  text-align: center;
+  position: relative;
+  top: 125px;
+}
+
+section#banner h1 {
+  font-size: 75px;
+}
+
+section#banner h2 {
+  font-size: 30px;
+}
+
+main {
+  position: relative;
+  top: 500px;
+}
+
+
+h3 {
+  font-weight: lighter;
+  font-size: 45px;
+  color: rgb(46, 46, 46);
+  padding: 30px 0 2.5rem 0;
+}
+
+#tickets {
+  display: block;
+  text-align: center;
+  border-bottom: .005rem solid rgb(235, 235, 235);
+  height: 280px;
+}
+
+#tickets p {
+  color: rgb(59, 59, 59);
+  font-size: 1rem;
+}
+
+#tickets a {
+  text-decoration: none;
+  padding: 11px 2.1rem;
+  background-color: rgb(2, 138, 2);
+  color: white;
+  position: relative;
+  bottom: -20px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#tickets a:hover {
+  background-color: rgb(0, 85, 0);
+}
+
+#speakers {
+  text-align: center;
+  border-bottom: .005rem solid rgb(235, 235, 235);
+  padding-bottom: 3.5rem;
+}
+
+#speakers h3 {
+  position: static;
+  padding: 60px 0 40px 0;
+  font-weight: lighter;
+}
+
+#speakers ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#speakers ul li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  border: .005rem solid rgb(238, 238, 238);
+  width: 30%;
+}
+
+#speakers figure img {
+  width: 100%;
+}
+
+#speakers h4 {
+  color: green;
+  font-size: 1.50rem;
+  font-weight: bold;
+  padding: 20px 0 10px 0;
+}
+
+#speakers p {
+  font-size: 1rem;
+  color: rgb(54, 54, 54);
+  padding-bottom: 40px;
+  margin: 0 20px;
+}
+
+#schedule {
+  padding-top: 25px;
+}
+
+#schedule h3 {
+  text-align: center;
+}
+#schedule ul {
+  border-top: .005rem solid rgb(235, 235, 235);
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 10px 0;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+#schedule ul:last-of-type {
+  border-bottom: .005rem solid rgb(235, 235, 235);
+  padding: 30px;
+}
+
+#schedule ul li{
+  display: inline-block;
+}
+
+#schedule ul li:nth-child(1) {
+  padding-left: 10px;
+  flex-basis: 12%;
+}
+
+#schedule ul li:nth-child(2) {
+  flex-basis: 64%;
+}
+
+#schedule ul li:nth-child(3) {
+  flex-basis: 24%;
+  position: relative;
+  left: 32px;
+}
+
+#schedule ul li a img {
+  width: 100%;
+}
+
+#schedule ul li a {
+  color: green;
+  font-size: 1.10rem;
+  font-weight: bold;
+  display: block;
+  width: 130px;
+}
+
+@media (max-width: 1000px) {
+  #speakers ul li {
+    width: 38%;
+  }
+}
+
+#location {
+  display: block;
+  padding-top: 35px;
+  font-weight: lighter;
+  margin: 0 30px;
+  color: rgb(46, 46, 46);
+}
+
+#location h3 {
+  text-align: center;
+}
+
+#location p {
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+#map {
+  display: block;
+  width: 1800px;
+  height: 500px;
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  left: -300px; 
+}
+
+#map figure {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  left: 300px;
+  top: 125px;
+  display: block;
+}
+
+#map figure img {
+  border: 5px solid black;
+}
+
+#location article {
+  display: block;
+  position: relative;
+  top: 540px;
+  border-bottom: .005rem solid rgb(235, 235, 235);
+  padding-bottom: 47px;
+}
+
+#papers {
+  position: relative;
+  top: 580px;
+  border-bottom: .005rem solid rgb(235, 235, 235);
+  padding-bottom: 47px;
+  margin: 0 26px 30px 26px;
+}
+
+#papers h3 {
+  text-align: center;
+}
+
+#papers p {
+  font-size: 1rem;
+  color: rgb(46, 46, 46);
+  margin-bottom: 20px;
+}
+
+#call {
+  display: inline-block;
+  width: 180px;
+  color: white;
+  text-decoration: none;
+  padding: 11px 2.1rem;
+  background-color: rgb(2, 138, 2);
+  color: white;
+  position: relative;
+  top: -10px;
+  left: 30px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#call:hover {
+  background-color: rgb(1, 77, 1);
+}
+
+
+#code{
+  color: green;
+  font-weight: bold;;
+}
+
+#sponsors {
+  position: relative;
+  top: 590px;
+  margin: 0 26px 30px 26px;
+}
+
+#sponsors h3 {
+  text-align: center;
+
+}
+
+h4 {
+  font-size: 1.10rem;;
+}
+
+#sponsors ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#support ul li {
+  display: inline-block;
+  width: 30%;
+}
+
+#support ul li img {
+  width: 100%;
+}
+
+footer {
+  display: block;
+  position: relative;
+  top: 1150px;
+  background: black url("images/img_people.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  color: white;
+  font-size: 1rem;
+  padding: 60px 0 0 0;
+}
+
+footer h3 {
+  color: white;
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+
+footer a {
+  color: green;
+}
+
+footer section {
+  background-color: rgba(0, 0, 0, 0.719);
+  padding: 20px 10px 25px 20px;;
+  position: relative;
+  top: -60px;
+}
+
+footer section h4 {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+footer section a {
+  font-weight: bold;;
+}
+
+#email {
+  display: inline-block;
+  width: 75px;
+  color: white;
+  text-decoration: none;
+  padding: 8px 2.1rem;
+  background-color: rgb(2, 138, 2);
+  color: white;
+  position: relative;
+  top: 10px;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#email:hover {
+  background-color: rgb(1, 77, 1);
+}
+
+.tags {
+  font-size: .5rem;
+  display: inline;
+}
+
+.tags dt{
+  display: inline-block;
+  background-color: rgb(226, 226, 226);
+  border: .015rem solid rgb(211, 211, 211);
+  padding: 0 .12rem;
+  margin: 0 .075rem;
+}

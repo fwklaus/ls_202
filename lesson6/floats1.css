@@ -1,0 +1,42 @@
+body, section, article, aside {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: grey;
+}
+
+section {
+  background-color: white;
+  /* width: 750px; */
+  max-width: 1000px;
+  margin: 0 auto; 
+  /* overflow: hidden; */
+}
+
+article, aside {
+  box-sizing: border-box;
+  float: left;
+  padding: 1rem;
+}
+
+article {
+  /* width: 500px; */
+  width: 70%;
+  background-color: rgb(248, 248, 177);
+}
+
+aside {
+  /* width: 250px; */
+  float: none;
+  overflow: hidden;
+  background-color: rgb(132, 233, 199);
+}
+
+
+footer {
+  background-color: #ebecff;
+  clear: both;
+  padding: 1rem;
+}

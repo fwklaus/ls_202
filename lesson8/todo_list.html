@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo List</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="todo_list.css">
+</head>
+<body>
+    <header>
+      <h1>All Todos<p class="header_totals">18</p></h1>
+      <nav>
+        <ul id="todos">
+          <li class="active">
+            <label for="two_sixteen">
+              2/16
+              <input class="todos" type="checkbox" id="two_sixteen">
+            </label>
+            <p class="totals">8</p>
+          </li>
+
+          <li  class="">
+            <label for="three_sixteen">
+              3/16
+              <input class="todos" type="checkbox" id="three_sixteen">
+            </label>
+            <p class="totals">2</p>
+          </li>
+
+          <li class="">
+            <label for="four_sixteen">
+              4/16
+              <input class="todos" type="checkbox" id="four_sixteen">
+            </label>
+            <p class="totals">1</p>
+          </li>
+
+          <li class="">
+            <label for="five_sixteen">
+              5/16
+              <input class="todos" type="checkbox" id="five_sixteen">
+            </label>
+            <p class="totals">1</p>
+          </li>
+
+          <li class="">
+            <label for="six_sixteen">
+              6/16
+              <input class="todos" type="checkbox" id="six_sixteen">
+            </label>
+            <p class="totals">6</p>
+          </li>
+        </ul>
+      </nav>
+
+      <h1>Completed</h1>
+      <nav>
+        <ul id="completed">
+          <li>02/16</li>
+          <li>03/16</li>
+          <li>04/16</li>
+          <li>05/16</li>
+          <li>06/16</li>
+        </ul>
+      </nav>
+    </header>
+
+    <label id="hamburger" class="hidden">
+      <input id="burger" type="checkbox">
+      <img src="images2/hamburger.png" alt="Display Nav Bar">
+    </label>
+    
+    <main>
+      <h2><p>2/16</p><p class="h2_totals">8</p></h2>
+
+      <ul>
+        <li>
+          <a href="#">Add new to do</a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item1">
+          <label for="item1">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal1"> 
+          <label for="modal1">
+            Item 1
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+
+              <dl>
+                <dt>
+                  <label>Title</label>
+                </dt><dd>
+                  <input class="title" type="textbox" value="Item 1">
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>
+                  <label style="all: revert">Due Date</label>
+                </dt>
+                <dd>
+                  <input class="due" type="number"> / 
+                  <input class="due" type="textbox" placeholder="Month"> /
+                  <input class="due" type="number" placeholder="Year">
+                </dd>
+              </dl>
+
+              <dl>
+                <dt>
+                  <label class="desc">Description</label>
+                </dt>
+                <dd>
+                  <textarea rows="8" cols="61" placeholder="Description"></textarea>
+                </dd>
+              </dl>
+
+              <input type="submit" value="Save">
+              <input type="submit" value="Mark As Complete">
+
+              </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item2">
+          <label for="item2">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal2"> 
+          <label for="modal2">
+            Item 2
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 2">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item3">
+          <label for="item3">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal3"> 
+          <label for="modal3">
+            Item 3
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 3">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item4">
+          <label for="item4">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal4"> 
+          <label for="modal1">
+            Item 4
+          </label>
+          
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 4">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item5">
+          <label for="item5">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal5"> 
+          <label for="modal5">
+            Item 5
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 5">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item6">
+          <label for="item6">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal6"> 
+          <label for="modal6">
+            Item 6
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 6">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item7">
+          <label for="item7">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal7"> 
+          <label for="modal7">
+            Item 7
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 7">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item8">
+          <label for="item8">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal8"> 
+          <label for="modal8">
+            Item 8
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 8">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+
+        <li>
+          <input class="items" type="checkbox" id="item9">
+          <label for="item9">
+            <img src="images2/unticked-box.png" alt="Checkbox">
+          </label>
+
+          <input class="modal" type="checkbox" id="modal9"> 
+          <label for="modal9">
+            Item 9
+          </label>
+
+          <figure></figure>
+
+          <section class="modal">
+            <form action="#" method="post">
+              <label>
+                Title
+                <input type="textbox" value="Item 9">
+              </label>
+
+                <label>
+                  Due Date
+                  <input type="number"> / 
+                  <input type="textbox" placeholder="Month"> /
+                  <input type="number" placeholder="Year">
+                </label>
+
+                <label>Description
+                  <input type="textarea" placeholder="Description">
+                </label>
+            </form>
+          </section>
+
+          <a class="trash" href="#"><img src="images2/trash.png" alt="Trash"></a>
+        </li>
+      </ul>
+    </main>
+  <footer></footer>
+</body>
+</html>
